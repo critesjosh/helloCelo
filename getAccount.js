@@ -1,21 +1,23 @@
-const ethers = require('ethers')
+const Web3 = require('web3')
 const fs = require('fs');
+var web3 = new Web3();
 
 function getAccount() {
     return new Promise(resolve => {
         fs.readFile('./.secret', {encoding: 'utf-8'}, (err, data) => {
+            console.log(typeof data, data.length)
             if(data.length == 0){
-                let randomWallet = ethers.Wallet.createRandom()
+                let randomAccount = web3.eth.accounts.create()
         
-                fs.writeFile("./.secret", randomWallet.mnemonic, (err) => {
+                fs.writeFile("./.secret", randomAccount.privateKey, (err) => {
                     if(err) {
                         return console.log(err);
                     }
                 })
 
-                resolve(randomWallet)
+                resolve(randomAccount)
             } else {
-                resolve(new ethers.Wallet.fromMnemonic(data))
+                resolve(web3.eth.accounts.privateKeyToAccount(data))
             }
         })
     })

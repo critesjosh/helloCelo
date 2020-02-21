@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@celo/contractkit": "^0.2.10",
-    "ethers": "^4.0.44"
+    "web3": "^1.2.6"
   }
 }
