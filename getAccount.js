@@ -5,7 +5,6 @@ var web3 = new Web3();
 function getAccount() {
     return new Promise(resolve => {
         fs.readFile('./.secret', {encoding: 'utf-8'}, (err, data) => {
-            console.log(typeof data, data.length)
             if(data.length == 0){
                 let randomAccount = web3.eth.accounts.create()
         
