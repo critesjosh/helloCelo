@@ -11,10 +11,10 @@
 //
 
 async function readAccount(){
-    // 3. Get the Gold Token (CELO) contract
+    // 3. Get the token contract wrappers
     // 4. Address to look up
-    // 5. Get Gold Token (CELO) Balance
-    // Print balance
+    // 5. Get Get token balances
+    // Print balances
 }
 
 //
@@ -25,8 +25,8 @@ async function readAccount(){
 
 async function createAccount(){
     // 7. Get your account    
-    // 8. Get the Gold Token contract wrapper    
-    // 9. Get your CELO balance
+    // 8. Get the token contract wrappers  
+    // 9. Get your token balances
     // Print your account info
 }
 
@@ -35,16 +35,16 @@ async function createAccount(){
 //
 
 async function send(){
-    // 10.  Get your account
+    // 10. Get your account
     // 11. Add your account to ContractKit to sign transactions
     // 12. Specify recipient Address
     // 13. Specify an amount to send
-    // 14. Get the Gold Token (CELO) contract wrapper    
-    // 15. Transfer CELO from your account to anAddress
-    // 16. Wait for the transaction to be processed
-    // 17. Print receipt
-    // 18. Get your new balance
-    // 19. Print new balance
+    // 14. Get the token contract wrappers       
+    // 15. Transfer CELO and cUSD from your account to anAddress
+    // 16. Wait for the transactions to be processed
+    // 17. Print receipts
+    // 18. Get your new balances
+    // 19. Print new balances
 }
 
 readAccount()
