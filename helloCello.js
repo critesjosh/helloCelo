@@ -31,7 +31,7 @@ async function createAccount(){
 }
 
 //
-// Send Gold
+// Send CELO
 //
 
 async function send(){
