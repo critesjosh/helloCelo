@@ -41,6 +41,7 @@ async function send(){
     // 13. Specify an amount to send
     // 14. Get the token contract wrappers       
     // 15. Transfer CELO and cUSD from your account to anAddress
+    // Specify cUSD as the feeCurrency when sending cUSD
     // 16. Wait for the transactions to be processed
     // 17. Print receipts
     // 18. Get your new balances
