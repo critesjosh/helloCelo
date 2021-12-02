@@ -23,7 +23,7 @@ async function readAccount(){
 
 // 6. Import the getAccount function
 
-async function createAccount(){
+async function getBalances(){
     // 7. Get your account    
     // 8. Get the token contract wrappers  
     // 9. Get your token balances
@@ -40,7 +40,7 @@ async function send(){
     // 12. Specify recipient Address
     // 13. Specify an amount to send
     // 14. Get the token contract wrappers       
-    // 15. Transfer CELO and cUSD from your account to anAddress
+    // 15. Transfer CELO, cUSD and cEUR from your account to anAddress
     // 16. Wait for the transactions to be processed
     // 17. Print receipts
     // 18. Get your new balances
