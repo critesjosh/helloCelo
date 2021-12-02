@@ -48,5 +48,5 @@ async function send(){
 }
 
 readAccount()
-createAccount()
+getBalances()
 send()
